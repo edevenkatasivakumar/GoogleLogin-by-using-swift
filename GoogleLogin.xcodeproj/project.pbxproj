@@ -12,9 +12,13 @@
 		70CB9BAD2201D79A00A90F72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70CB9BAB2201D79A00A90F72 /* Main.storyboard */; };
 		70CB9BAF2201D79A00A90F72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70CB9BAE2201D79A00A90F72 /* Assets.xcassets */; };
 		70CB9BB22201D79A00A90F72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70CB9BB02201D79A00A90F72 /* LaunchScreen.storyboard */; };
+		70CB9BBA2201DCD100A90F72 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 70CB9BB92201DCD100A90F72 /* GoogleService-Info.plist */; };
+		823E4D500667CA08DDACEE2B /* Pods_GoogleLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 435F60A123CA23B34F211C92 /* Pods_GoogleLogin.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01D10DDD3EA08D709106044A /* Pods-GoogleLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleLogin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleLogin/Pods-GoogleLogin.debug.xcconfig"; sourceTree = "<group>"; };
+		435F60A123CA23B34F211C92 /* Pods_GoogleLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		70CB9BA42201D79A00A90F72 /* GoogleLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70CB9BA72201D79A00A90F72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70CB9BA92201D79A00A90F72 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		70CB9BAE2201D79A00A90F72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		70CB9BB12201D79A00A90F72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		70CB9BB32201D79A00A90F72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70CB9BB92201DCD100A90F72 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BD904E4B52EFBD930A21803B /* Pods-GoogleLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleLogin.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleLogin/Pods-GoogleLogin.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				823E4D500667CA08DDACEE2B /* Pods_GoogleLogin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25AE76CC38CD19D324040324 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				01D10DDD3EA08D709106044A /* Pods-GoogleLogin.debug.xcconfig */,
+				BD904E4B52EFBD930A21803B /* Pods-GoogleLogin.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		70CB9B9B2201D79A00A90F72 = {
 			isa = PBXGroup;
 			children = (
 				70CB9BA62201D79A00A90F72 /* GoogleLogin */,
 				70CB9BA52201D79A00A90F72 /* Products */,
+				25AE76CC38CD19D324040324 /* Pods */,
+				D6758116302A859410389F6D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +72,7 @@
 		70CB9BA62201D79A00A90F72 /* GoogleLogin */ = {
 			isa = PBXGroup;
 			children = (
+				70CB9BB92201DCD100A90F72 /* GoogleService-Info.plist */,
 				70CB9BA72201D79A00A90F72 /* AppDelegate.swift */,
 				70CB9BA92201D79A00A90F72 /* ViewController.swift */,
 				70CB9BAB2201D79A00A90F72 /* Main.storyboard */,
@@ -64,6 +83,14 @@
 			path = GoogleLogin;
 			sourceTree = "<group>";
 		};
+		D6758116302A859410389F6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				435F60A123CA23B34F211C92 /* Pods_GoogleLogin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 70CB9BB62201D79A00A90F72 /* Build configuration list for PBXNativeTarget "GoogleLogin" */;
 			buildPhases = (
+				96A67724A6EE72BE03032523 /* [CP] Check Pods Manifest.lock */,
 				70CB9BA02201D79A00A90F72 /* Sources */,
 				70CB9BA12201D79A00A90F72 /* Frameworks */,
 				70CB9BA22201D79A00A90F72 /* Resources */,
+				3C8B091B0B2ADE9ABB2AEE2E /* [CP] Embed Pods Frameworks */,
+				58A9AC343B86B1A4E7351A60 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,12 +154,72 @@
 			buildActionMask = 2147483647;
 			files = (
 				70CB9BB22201D79A00A90F72 /* LaunchScreen.storyboard in Resources */,
+				70CB9BBA2201DCD100A90F72 /* GoogleService-Info.plist in Resources */,
 				70CB9BAF2201D79A00A90F72 /* Assets.xcassets in Resources */,
 				70CB9BAD2201D79A00A90F72 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C8B091B0B2ADE9ABB2AEE2E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GoogleLogin/Pods-GoogleLogin-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoogleLogin/Pods-GoogleLogin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58A9AC343B86B1A4E7351A60 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GoogleLogin/Pods-GoogleLogin-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoogleLogin/Pods-GoogleLogin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96A67724A6EE72BE03032523 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoogleLogin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		70CB9BA02201D79A00A90F72 /* Sources */ = {
@@ -272,12 +362,13 @@
 		};
 		70CB9BB72201D79A00A90F72 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01D10DDD3EA08D709106044A /* Pods-GoogleLogin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = GoogleLogin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.TechM.GoogleLogin;
+				PRODUCT_BUNDLE_IDENTIFIER = com.TechM.Vodacom112;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -286,12 +377,13 @@
 		};
 		70CB9BB82201D79A00A90F72 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD904E4B52EFBD930A21803B /* Pods-GoogleLogin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = GoogleLogin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.TechM.GoogleLogin;
+				PRODUCT_BUNDLE_IDENTIFIER = com.TechM.Vodacom112;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
